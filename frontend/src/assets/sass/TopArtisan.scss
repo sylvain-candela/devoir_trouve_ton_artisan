@@ -1,0 +1,63 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Graphik', sans-serif;
+    font-weight: 900;
+    color: #384050;
+    position: relative;
+    padding-bottom: 15px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: #0074c7;
+    }
+}
+
+.artisan-list {
+  font-family: 'Graphik', sans-serif;
+
+  > div {
+    display: flex; 
+    flex-wrap: wrap;     
+    gap: 20px;           
+    justify-content: center; 
+  }
+
+  .artisan-card {
+    text-decoration: none;
+    color: inherit;        
+
+    .card {
+      transition: transform 0.2s ease;
+      
+      &-title {
+        font-weight: 700;
+      }
+      
+      &:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+    }
+  }
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;   
+    
+    .artisan-note-text {
+        font-family: 'Graphik', sans-serif;
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: #384050;
+        margin-bottom: 0; 
+    }
+}

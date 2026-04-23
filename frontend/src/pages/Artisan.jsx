@@ -1,0 +1,40 @@
+import { Container, Row, Col } from 'react-bootstrap';
+import ArtisanCard from "../components/ArtisanCard";
+import ContactArtisan from "../components/ContactArtisan";
+import "../assets/sass/Artisan.scss";
+
+function Artisan() {
+    return (
+        <Container className="artisan-detail-page py-5">
+            <Row className="justify-content-center">
+                <Col lg={10}>
+                    <section className="header-section text-center mb-5">
+                        <h2 className="page-title">Fiche de l'Artisan</h2>
+                        <ArtisanCard />
+                    </section>
+
+                    <section className="about-section mb-5">
+                        <div className="about-card">
+                            <h2>À propos</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                                mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section className="contact-section">
+                        <ContactArtisan />
+                    </section>
+                </Col>
+            </Row>
+        </Container>
+    );
+}
+
+export default Artisan;

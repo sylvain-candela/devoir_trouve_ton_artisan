@@ -1,0 +1,66 @@
+.artisan-detail-page {
+  font-family: 'Graphik', sans-serif;
+
+  .page-title {
+    font-weight: 700;
+    color: #384050;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #0074c7;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+  }
+
+  .about-card {
+    background: #f1f8fc;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+
+    h2 {
+      font-weight: 700;
+      color: #384050;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-family: 'Graphik', sans-serif;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #384050;
+      margin-bottom: 0;
+      text-align: justify;
+    }
+  }
+
+  .contact-section {
+    background-color: #f1f8fc;
+    border-radius: 20px;
+    padding: 20px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  .artisan-detail-page {
+    .about-card {
+      padding: 25px;
+      
+      p {
+        text-align: left;
+        font-size: 1rem;
+      }
+    }
+  }
+}

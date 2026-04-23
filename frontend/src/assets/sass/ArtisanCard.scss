@@ -1,0 +1,139 @@
+.artisan-card-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  font-family: 'Graphik', sans-serif;
+
+  .main-artisan-card {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    border: none;
+
+    .artisan-header {
+      width: 100%;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+
+      .image-wrapper {
+        width: 120px;
+        height: 120px;
+        border-radius: 15px;
+        overflow: hidden;
+        border: 4px solid #ffffff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        margin: 0 auto 15px auto;
+        background: white;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+
+      .artisan-name {
+        font-weight: 900;
+        color: #384050;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      .rating-badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        background: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+        .note-val {
+          font-weight: 500;
+          color: #384050;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .list-group {
+      border: none; 
+      border-radius: 0;
+      width: 100%;
+    }
+
+    .list-group-item {
+        justify-content: center;
+        align-items: center;
+        padding: 15px 25px;
+        border-left: none;
+        border-right: none;
+        border-color: #f1f8fc;
+        color: #495057;
+        font-size: 1rem;
+        font-weight: 300;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .label {
+        font-weight: 700;
+        color: #384050;
+        margin-right: 5px;
+      }
+    }
+
+    .action-links {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+      box-sizing: border-box;
+      
+      a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        flex: 1;
+        text-align: center;
+
+        &.btn-contact {
+          background-color: #0074c7;
+          color: white;
+          &:hover {
+            background-color: #0074c7;
+            transform: translateY(-2px);
+          }
+        }
+
+        &.btn-website {
+          border: 1.5px solid #0074c7;
+          color: #007bff;
+          &:hover {
+            background-color: #f1f8fc;
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+}
